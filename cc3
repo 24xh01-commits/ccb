@@ -1,0 +1,12 @@
+gcloud config set project shaaruk-ex3
+gcloud components install app-engine-python app-engine-java
+  mkdir my-python-app
+  cd my-python-app
+  pip install flask
+sample.py
+  runtime: python27
+api_version: 1
+threadsafe: false
+handlers:
+- url: /
+script: sample.py
